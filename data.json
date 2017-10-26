@@ -1,0 +1,253 @@
+{
+
+	"neighborhoods": [
+
+		{
+			"id" : 1,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Harbor"
+
+		},
+
+		{
+			"id" : 2,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Southeast"
+
+		},
+
+		{
+			"id" : 3,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "77th Street"
+
+		},
+
+		{
+			"id" : 4,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Pacific"
+
+		},
+
+		{
+			"id" : 5,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Newton"
+
+		},
+
+		{
+			"id" : 6,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Southwest"
+
+		},
+
+		{
+			"id" : 7,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Hollenbeck"
+
+		},
+
+		{
+			"id" : 8,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Central"
+
+		},
+
+		{
+			"id" : 9,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Northeast"
+
+		},
+
+		{
+			"id" : 10,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Rampart"
+
+		},
+
+		{
+			"id" : 11,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Olympic"
+
+		},
+
+		{
+			"id" : 12,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Wilshire"
+
+		},
+
+		{
+			"id" : 13,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Hollywood"
+
+		},
+
+		{
+			"id" : 14,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "West Los Angeles"
+
+		},
+
+		{
+			"id" : 15,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "North Hollywood"
+
+		},
+
+		{
+			"id" : 16,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Van Nuys"
+
+		},
+
+		{
+			"id" : 17,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "West Valley"
+
+		},
+
+		{
+			"id" : 18,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Topanga"
+
+		},
+
+		{
+			"id" : 19,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Foothill"
+
+		},
+
+		{
+			"id" : 20,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Mission"
+
+		},
+
+		{
+			"id" : 21,
+			"numVehicles" : 0,
+			"numRobbery" : 0,
+			"numBattery" : 0,
+			"numAssault" : 0,
+			"numHomicide" : 0,
+			"name" : "Devonshire"
+
+		},
+
+	]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
