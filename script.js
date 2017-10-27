@@ -27,3 +27,5 @@ $(window).scroll(function(){
 		$('#line').fadeIn(200);
     }
 });
+
+});
