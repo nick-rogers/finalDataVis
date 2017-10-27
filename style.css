@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant:400,400i');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
+
+/*font-family: 'Cormorant', serif;*/ 
+
+html {
+font-size: 20px;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	max-width: 1500px;
+	min-width: 1000px;
+}
+
+h1, h2, p {
+	font-family: 'Cormorant', serif;
+	font-weight: 400;
+}
+
+h1 {
+	line-height: 2.1rem;
+	margin-left: -0.5rem;
+	margin-top: 2rem;
+}
+
+h2 {
+	font-family: 'PT Serif', serif;
+	font-size: 1.1rem;
+	margin-left: -0.5rem;
+	margin-top: -0.7rem;
+}
+
+.subheader {
+	color: #BDBFC2;
+	font-family: 'Cormorant', serif;
+	font-weight: 400;
+}
+
+h3 {
+	display: block;
+	position: absolute;
+	font-family: 'PT Serif', serif;
+	font-weight: 100;
+	font-size: 1.27rem;
+	margin-top: -8px;
+}
+
+.content {
+	display: block;
+	width: 90%;
+	background-color: white;
+	height: 3150px;
+	margin: 0 auto;
+	margin-left: 10vw;
+}
+
+.top {
+	display: inline-block;
+	position: fixed;
+	width: 20rem;
+	height: 10rem;
+	background-color: white;
+	margin-left: -10rem;
+	overflow: visible;
+	z-index: 200;
+}
+
+.top-shrink {
+	display: inline-block;
+	position: fixed;
+	width: 80rem;
+	height: 2.5rem;
+	background-color: white;
+	margin-left: -10rem;
+	overflow: visible;
+	z-index: 200;
+	text-align: center;
+}
+
+.header-small {
+	display: none;
+	font-size: 1.2rem;
+	margin-top: 0px;
+	margin-left: -60rem;
+}
+
+#years {
+	font-size: 1.2rem;
+}
+
+#line {
+	display: block;
+	width: 300%;
+	height: 1.60px;
+	background-color: black;
+	z-index: 100;
+	margin-top: 1.8rem;
+	margin-left: -100%;
+}
+
+#newline {
+	display: none;
+	width: 300%;
+	height: 1.2px;
+	background-color: black;
+	z-index: 100;
+	margin-top: 2.5rem;
+	margin-left: -100%;
+	position: fixed;
+}
+
+.popup {
+	z-index: 150;
+	top: 15rem;
+	margin-left: 2.5rem;
+	position: fixed;
+	width: 12.5rem;
+	height: 15.1rem;
+	background-color: white;
+	border-style: solid;
+	border-width: 1.2px;
+	border-color: black;
+}
+
+.neighborhood {
+	position: absolute;
+	margin-top: 10rem;
+	font-size: 0.8rem;
+	margin-left: 1rem;
+	font-style: italic;
+}
+
+.numIncidents {
+	position: absolute;
+	margin-top: 11rem;
+	font-size: 1.4rem;
+	margin-left: 1rem;
+}
+
+.since {
+	position: absolute;
+	margin-top: 13rem;
+	font-size: 0.8rem;
+	margin-left: 1rem;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+	background-image: url(blank-01.svg);
+	background-size: 110% 110%;
+	background-position: -10px -35px;
+	background-repeat: no-repeat;
+	transition: 0.4s;
+}
+
+
+
+.sec {
+	display: inline-block;
+	width: 27.05rem;
+	height: 15rem;
+	margin-top: 15.03rem;
+	margin-left: 17vw;
+}
+
+.data {
+	width: 540px;
+	height: 216px;
+	margin-top: 4.77rem;
+}
+
+.report {
+	display: block;
+	position: absolute;
+	font-size: 1.3rem;
+	margin-top: 1.8rem;
+	margin-left: 5.5rem;
+	letter-spacing: -0.02rem;
+	font-family: 'PT Serif', serif;
+	font-size: 0.9rem;
+}
+
+.number {
+	font-family: 'PT Serif', serif;
+	font-size: 1.2rem;
+}
+
+
+
+
+/*Below is the styling for different types of circles*/
+
+
+.circle {
+	display: block;
+	float: left;
+	margin: 5px;
+	width: 17px;
+	height: 17px;
+	border-radius: 17px;
+	
+	background-color: black;
+	box-sizing: border-box;
+}
+
+.circle:hover {
+	border-width: 0.5px;
+}
+
+.rank1 {
+	background-color: #2d0101;
+}
+
+.rank2 {
+	background-color: #510101;
+}
+
+.rank3 {
+	background-color: #720101;
+}
+
+.rank4 {
+	background-color: #990202;
+}
+
+.rank5 {
+	background-color: #bf0202;
+}
+
+.rank6 {
+	background-color: #ff0000;
+}
+
+.rank7 {
+	background-color: #ff4a4a;
+}
+
+.rank8 {
+	background-color: #ff8888;
+}
+
+.rank9 {
+	background-color: #ffaeae;
+}
+
+.rank10 {
+	background-color: #ffcfcf;
+}
+
+.rank11 {
+	background-color: #fcf0f0;
+}
+
+.rank12 {
+	background-color: #defff9;
+}
+
+.rank13 {
+	background-color: #acfcec;
+}
+
+.rank14 {
+	background-color: #42fcd8;
+}
+
+.rank15 {
+	background-color: #02d1aa;
+}
+
+.rank16 {
+	background-color: #04b290;
+}
+
+.rank17 {
+	background-color: #06937b;
+}
+
+.rank18 {
+	background-color: #016d60;
+}
+
+.rank19 {
+	background-color: #025951;
+}
+
+.rank20 {
+	background-color: #013f39;
+}
+
+.rank21 {
+	background-color: #011c19;
+}
+
+.k01 {
+
+}
+
+.k02 {
+	
+}
+
+.k03 {
+	
+}
+
+.k04 {
+	
+}
+
+.k05 {
+	
+}
+
+.k06 {
+	
+}
+
+.k07 {
+	
+}
+
+.k08 {
+	
+}
+
+.k09 {
+	
+}
+
+.k10 {
+	
+}
+
+.k11 {
+	
+}
+
+.k12 {
+	
+}
+
+.k13 {
+	
+}
+
+.k14 {
+	
+}
+
+.k15 {
+	
+}
+
+.k16 {
+	
+}
+
+.k17 {
+	
+}
+
+.k18 {
+	
+}
+
+.k19 {
+	
+}
+
+.k20 {
+	
+}
+
+.k21 {
+	
+}
