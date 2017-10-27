@@ -22,6 +22,9 @@ $('#rep').click(function(){
 	var name = neighborhoods[0].numBattery[theName];
 });
 
+var bgroundImage = "url(blank-01.svg)";
+
+$('.map').css('background-image', bgroundImage);
 
 var ogColor;
 
