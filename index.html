@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="top">
-			<h1 class="header">Mapping LA<br/> Crime</h1>
+			<h1 class="header">Mapping LA<br/> <span>Crime</span></h1>
 			<h1 class="header-small">LA Crime</h1>
 			<h2 class="subheader">
 				(<span id="years">2010-2016</span>)
@@ -22,15 +22,23 @@
 			<div class="sec">
 				<div class="graphic">
 					<div class="button-container">
-						<div class="switch-button start" id="sb1">Total Crime</div>
+						<!--<div class="switch-button start" id="sb1">Total Crime</div>-->
 						<div class="switch-button" id="sb2">Total Crime Heatmap</div>
-						<div class="switch-button" id="sb3">Total Car Theft</div>
+						<!--<div class="switch-button" id="sb3">Total Car Theft</div>
 						<div class="switch-button" id="sb4">Total Robbery</div>
 						<div class="switch-button" id="sb5">Total Battery</div>
 						<div class="switch-button" id="sb6">Total Assault</div>
 						<div class="switch-button" id="sb7">Total Homicide</div>
+						-->
 					</div>
 					<h2 class="section-header"><span>Where</span> is crime occurring?</h2>
+
+					<div class="up-down-arrow"></div>
+					<div class="up-down-text">
+						<p class="higher">High Crime</p>
+						<p class="lower">Low Crime</p>
+					</div>
+
 					<div class="bar-container" id="bc-1">
 						<div class="bar b03" id="– 77th Street"></div>
 						<div class="bar b02" id="– Southeast"></div>
@@ -55,6 +63,32 @@
 						<div class="bar b14" id="– West Los Angeles"></div>
 
 					</div>
+
+					<div class="specialBar" id="bc-8">
+						<div class="bar b03" id="– 77th Street" style="background-color: #2d0101"></div>
+						<div class="bar b02" id="– Southeast" style="background-color: #510101"></div>
+						<div class="bar b06" id="– Southwest" style="background-color: #720101"></div>
+						<div class="bar b05" id="– Newton" style="background-color: #990202"></div>
+						<div class="bar b08" id="– Central" style="background-color: #bf0202"></div>
+						<div class="bar b11" id="– Olympic" style="background-color: #ff0000"></div>
+						<div class="bar b20" id="– Mission" style="background-color: #ff4a4a"></div>
+						<div class="bar b10" id="– Rampart" style="background-color: #ff8888"></div>
+						<div class="bar b07" id="– Hollenbeck" style="background-color: #ffaeae"></div>
+						<div class="bar b13" id="– Hollywood" style="background-color: #ffcfcf"></div>
+						<div class="bar b01" id="– Harbor" style="background-color: #fcf0f0"></div>
+						<div class="bar b09" id="– Northeast" style="background-color: #defff9"></div>
+						<div class="bar b04" id="– Pacific" style="background-color: #acfcec"></div>
+						<div class="bar b15" id="– North Hollywood" style="background-color: #42fcd8"></div>
+						<div class="bar b19" id="– Foothill" style="background-color: #02d1aa"></div>
+						<div class="bar b16" id="– Van Nuys" style="background-color: #04b290"></div>
+						<div class="bar b12" id="– Wilshire" style="background-color: #06937b"></div>
+						<div class="bar b21" id="– Devonshire" style="background-color: #016d60"></div>
+						<div class="bar b18" id="– Topanga" style="background-color: #025951"></div>
+						<div class="bar b17" id="– West Valley" style="background-color: #013f39"></div>
+						<div class="bar b14" id="– West Los Angeles" style="background-color: #033028"></div>
+
+					</div>
+
 					<div class="bar-container vehicle" id="bc-2">
 						<div class="bar b-1-03" id="– 77th Street"></div>
 						<div class="bar b-1-05" id="– Newton"></div>
@@ -178,7 +212,7 @@
 				<div class="through"></div>
 					<div class="a1 area"></div>
 					<div class="a2 area"></div>
-					<div class="a3 area"></div>
+					<div class="a3 area" id="area03"></div>
 					<div class="a4 area"></div>
 					<div class="a5 area"></div>
 					<div class="a6 area"></div>
@@ -200,13 +234,13 @@
 				</div>
 			</div>
 			<div class="sec" id="clock-sec">
-				<h2 class="section-header rh"><span id="what-time">At what times</span> is crime occurring?</h2>
+				<h2 class="section-header rh"><span id="what-time">At what times</span> are crimes occurring?</h2>
 				<div class="clock-face">
 					<div class="am-pm" id="am">AM</div>
 					<div class="am-pm" id="pm">PM</div>
 					<div class="inside-clock">
 						<p id="time">1:00-2:00AM</p>
-						<p id="time-content"><span id="time-percent">12%</span><br/><span
+						<p id="time-content"><span id="totCrime">(# Crime)</span><br/><span id="time-percent">12%</span><br/><span
 						id="time-num">4,000</span><br/></p>
 					</div>
 				</div>
@@ -253,7 +287,7 @@
 				</div>
 			</div>
 			<div class="sec bs">
-				<h2 class="section-header" id="what-month" ><span>What time of the year</span> is crime occurring?</h2>
+				<h2 class="section-header" id="what-month" ><span>During which months</span> are crimes occurring?</h2>
 				<div class="month-container">
 					<p class="m-caption">Jan</p>
 					<p class="m-caption">Feb</p>
@@ -282,9 +316,6 @@
 					<div class="month" id="m2"><span>16.1%</span></div>
 					<div class="month" id="m1"><span>18.2%</span></div>
 				</div>
-		
-			</div>
-			<div class="sec">
 		
 			</div>
 		</div>

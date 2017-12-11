@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant:400,400i');
 
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
 
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i');
 /*font-family: 'Cormorant', serif;*/ 
 
+@font-face {
+    font-family: "IBMPlexMonoRegular";
+    src: url("IBMPlexMono-Regular-Latin1.woff") format('woff');
+}
+
+@font-face {
+    font-family: "IBMPlexMonoLight";
+    src: url("IBMPlexMono-Light-Latin1.woff") format('woff');
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
-font-size: 20px;
+	font-size: 20px;
+	height: 3500px;
 }
 
 body {
 	margin: 0;
 	text-align: center;
-	max-width: 1500px;
-	min-width: 1000px;
+	min-width: 800px;
+	height: 3500px;
 }
 
 h1, h2, p {
-	font-family: 'Anonymous Pro', monospace;
-	/*font-family: 'Cormorant', serif;*/
+	font-family: 'IBMPlexMonoRegular', monospace;
 	font-weight: 400;
 }
 
@@ -35,18 +48,22 @@ h2 {
 	margin-top: -0.7rem;
 }
 
+.header span {
+	line-height: 3rem;
+}
+
 .subheader {
-	color: #dddddd;
-	font-family: 'Cormorant', serif;
+	color: #DCDCDC;
+	font-family: 'IBMPlexMonoLight', monospace;
 	font-weight: 400;
 }
 
 h3 {
 	display: block;
 	position: absolute;
-	font-family: 'PT Serif', serif;
+	font-family: 'IBMPlexMonoLight', monospace;
 	font-weight: 100;
-	font-size: 1.27rem;
+	font-size: 1rem;
 	margin-top: -8px;
 }
 
@@ -54,7 +71,7 @@ h3 {
 	display: block;
 	width: 90%;
 	background-color: white;
-	height: 2800px;
+	height: 3500px;
 	margin: 0 auto;
 	text-align: center;
 	margin: 0 auto;
@@ -64,11 +81,11 @@ h3 {
 	display: inline-block;
 	width: 40rem;
 	height: 25rem;
-	margin-bottom: 35rem;
+	margin-bottom: 30rem;
 }
 
 .bs {
-	margin-top: -12rem;
+	margin-top: -18rem;
 }
 
 .bargraph {
@@ -108,8 +125,8 @@ h3 {
 	height: 15rem;
 	float: left;
 	bottom: 0;
-	font-family: 'Anonymous Pro', monospace;
-	font-size: 0.75rem;
+	font-family: 'IBMPlexMonoLight', monospace;
+	font-size: 0.7rem;
 	padding-bottom: 2rem;
 	text-align: center;
 	line-height: 15rem;
@@ -298,7 +315,7 @@ h3 {
 }
 
 #years {
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 }
 
 #line {
@@ -394,6 +411,16 @@ h3 {
 	background-color: black;
 }
 
+.areaToggle {
+	position: absolute;
+	width: 10rem;
+	transition: 0.25s;
+}
+
+.areaToggle {
+	background-color: black;
+}
+
 .a1 {
 	width: 3.4rem;
 	height: 6.188rem;
@@ -403,6 +430,7 @@ h3 {
 	margin-top: 17.85rem;
 	margin-left: 11.75rem;
 }
+
 
 .a2 {
 	width: 1.95rem;
@@ -414,6 +442,7 @@ h3 {
 	margin-top: 14.6rem;
 	
 }
+
 
 .a3 {
 	width: 3rem;
@@ -660,7 +689,7 @@ h3 {
 .button-container {
 	position: absolute;
 	display: block;
-	width: 8rem;
+	width: 8.8rem;
 	height: 9rem;
 	background-color: white;
 	margin-left: 18rem;
@@ -676,7 +705,7 @@ h3 {
 	margin-bottom: 0.35rem;
 	font-size: 0.75rem;
 	/*font-size: 0.8rem;*/
-	font-family: 'Anonymous Pro', monospace;
+	font-family: 'IBMPlexMonoLight', monospace;
 	/*font-family: 'Cormorant', serif;*/
 	text-align: left;
 	cursor: pointer;
@@ -688,6 +717,37 @@ h3 {
 	text-decoration: underline;
 }
 
+.up-down-arrow {
+	display: block;
+	position: absolute;
+	width: 2rem;
+	height: 18rem;
+	background-image: url(up-down-arrow.png);
+	background-size: 100% 100%;
+	margin-top: 6rem;
+	margin-left: -0.5rem;
+}
+
+.up-down-text {
+	display: block;
+	position: absolute;
+	width: 2rem;
+	height: 18rem;
+	margin-left: -2.5rem;
+	margin-top: 6rem;
+}
+
+.higher, .lower {
+	display: block;
+	width: 5rem;
+	height: 2rem;
+	float: left;
+	margin-top: 4.5rem;
+	font-size: 0.7rem;
+	transform: rotate(-90deg);
+	color: #DCDCDC;
+}
+
 .bar-container {
 	position: absolute;
 	display: block;
@@ -697,8 +757,24 @@ h3 {
 	margin-left: 2rem;
 	border-style: solid;
 	border-color: black;
-	border-width: 0rem 0rem 0.02rem 0rem;
+	border-width: 0rem 0rem 0rem 0rem;
+	border-bottom: 0.04rem solid black;
 	transition: 0.55s;
+}
+
+.specialBar {
+	position: absolute;
+	display: block;
+	width: 8rem;
+	height: 18rem;
+	margin-top: 6rem;
+	margin-left: 2rem;
+	border-style: solid;
+	border-color: black;
+	border-width: 0rem 0rem 0rem 0rem;
+	border-bottom: 0.04rem solid black;
+	transition: 0.55s;
+	display: none;
 }
 
 .vehicle {
@@ -760,11 +836,11 @@ h3 {
 	box-sizing: border-box;
 	border-color: black;
 	transition: 0.25s;
-	font-family: 'Cormorant', serif;
+	font-family: 'IBMPlexMonoLight', monospace;
 	text-align: right;
 	padding-left: 100%;
     white-space: nowrap;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 0rem;
     user-select: none;
     background-color: #eaeaea;
@@ -834,27 +910,27 @@ h3 {
 }
 
 .b14 {
-	height: 1.5%;
+	height: 1.51%;
 }
 
 .b15 {
-	height: 4.14%;
+	height: 4.15%;
 }
 
 .b16 {
-	height: 3.5%;
+	height: 3.7%;
 }
 
 .b17 {
-	height: 3.03%;
-}
-
-.b18 {
 	height: 3.05%;
 }
 
+.b18 {
+	height: 3.07%;
+}
+
 .b19 {
-	height: 4.63%;
+	height: 4.55%;
 }
 
 .b20 {
@@ -1375,12 +1451,13 @@ h3 {
 	pointer-events: none;
 }
 
-#time {
+#time, #totCrime {
 	font-family: 'Anonymous Pro', monospace;
 	/*font-family: 'PT Serif', serif;*/
 	font-size: 0.72rem;
 	font-style: italic;
 	color: #a0a0a0;
+	margin-bottom: 0.8rem;
 }
 
 #time-content {
@@ -1720,26 +1797,36 @@ h3 {
 .section-header span:before{
     content: "";
     position: absolute;
-    width: 6rem;
+    width: 4.5rem;
     height: 1px;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #DCDCDC;
 }
 
 #what-time:before{
     content: "";
     position: absolute;
-    width: 12.5rem;
+    width: 12rem;
     height: 1px;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #DCDCDC;
 }
 
 #what-month {
-	margin-left: 0rem;
+	margin-left: 2rem;
 	width: 100rem;
+}
+
+#what-month:before {
+	content: "";
+    position: absolute;
+    width: 17.5rem;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #DCDCDC;
 }
 
 
@@ -1748,3 +1835,22 @@ h3 {
 	margin-left: 5rem;
 	margin-top: -12rem;
 }
+
+
+#sb2 {
+	background: linear-gradient(-180deg, #ff0000, #06937b);
+  	background: -webkit-linear-gradient(-180deg, #ff0000, #06937b);
+  	background: -moz-linear-gradient(-180deg, #ff0000, #06937b);
+  	background: -o-linear-gradient(-180deg, #ff0000, #06937b);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+
+
+
+

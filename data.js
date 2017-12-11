@@ -254,6 +254,8 @@ $('.bar').mouseout(function(){
 
 // When clicking on the filters change the map and bar chart
 
+var isColor = false;
+
 $('.switch-button').click(function(){
 	$('.switch-button').css('color', '#dddddd');
 	$('.switch-button').css('text-decoration', 'none');
@@ -263,39 +265,119 @@ $('.switch-button').click(function(){
 
 	var thisID = $(this).attr('id');
 
-	var num = String(thisID.charAt(2));
+	//EDITED BELOW TO MAKE IT STATIC
+	//var num = String(thisID.charAt(2));
+
+	var num = 2;
 
 	console.log(num);
 
 	if(num == "1"){
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-1').css('display', 'block');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
 	}
 	else if(num == "2"){
+
+		//$('.bar-container').css('display', 'none');
+		$('#bc-8').css('display', 'block');
+
+		$('.area').addClass('areaToggle');
+		$('.area').removeClass('area');
+
 		$('.bar-container').css('display', 'none');
-		
+		$('.a1').css('background-color', '#ffaeae');
+		$('.a2').css('background-color', '#510101');
+		$('.a3').css('background-color', '#2d0101');
+		$('.a4').css('background-color', '#02d1aa');
+		$('.a5').css('background-color', '#990202');
+		$('.a6').css('background-color', '#720101');
+		$('.a7').css('background-color', '#ff4a4a');
+		$('.a8').css('background-color', '#bf0202');
+		$('.a9').css('background-color', '#fcf0f0');
+		$('.a10').css('background-color', '#ff0000');
+		$('.a11').css('background-color', '#defff9');
+		$('.a12').css('background-color', '#016d60');
+		$('.a13').css('background-color', '#ffcfcf');
+		$('.a14').css('background-color', '#033028');
+		$('.a15').css('background-color', '#42fcd8');
+		$('.a16').css('background-color', '#04b290');
+		$('.a17').css('background-color', '#025951');
+		$('.a18').css('background-color', '#06937b');
+		$('.a19').css('background-color', '#acfcec');
+		$('.a20').css('background-color', '#ff8888');
+		$('.a21').css('background-color', '#013f39');
+
+		/*$('.areaToggle').mouseover(function(){
+			var origColor = $(this).css()
+			$(this).css('background-color', 'black');
+		});*/
+
+		$('.areaToggle').hover(function() {
+	    $(this).attr('data-background-color-orig', $(this).css('background-color'));
+	    $(this).css('background-color', 'black');
+		}, function() {
+		$(this).css('background-color', $(this).attr('data-background-color-orig'));
+		});
+
 	}
+
 	else if(num == "3"){
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-2').css('display', 'block');
+		$('.area').css('background-color', '#eaeaea');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
+
 	}
 	else if(num == "4"){
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-3').css('display', 'block');
+		$('.area').css('background-color', '#eaeaea');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
+
 	}
 	else if(num == "5"){
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-4').css('display', 'block');
+		$('.area').css('background-color', '#eaeaea');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
+	
 	}
 	else if(num == "6"){
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-5').css('display', 'block');
+		$('.area').css('background-color', '#eaeaea');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
+
 	}
 	else {
 		$('.bar-container').css('display', 'none');
+		$('.specialBar').css('display', 'none');
 		$('#bc-6').css('display', 'block');
+		$('.area').css('background-color', '#eaeaea');
+		$('.areaToggle').addClass('area');
+		$('.areaToggle').removeClass('areaToggle');
+		$('.area').css('background-color', '#eaeaea');
+
 	}
 });
+
+
 
 
 /*$('.content').mouseover(function(){
