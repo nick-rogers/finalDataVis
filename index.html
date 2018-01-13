@@ -7,331 +7,344 @@
 	<meta charset="UTF-8">
 	</head>
 	<body>
-		<div class="top">
-			<h1 class="header">Mapping LA<br/> <span>Crime</span></h1>
-			<h1 class="header-small">LA Crime</h1>
-			<h2 class="subheader">
-				(<span id="years">2010-2016</span>)
-			</h2>
-			<div id="line"></div>
+		<div class="intro-splash"></div>
+		<div class="intro-text">
+			<h1>LA Crime</h1>
+			<span class="underline"></span>
+			<p>Using data released by the City of Los Angeles, the following data visualizations explore the geographic location and time occurances of crime in the city. This was done by compiling data from all of LA's 23 policed areas from the year 2010 to 2016.</p>
+			<div class="button-start">Enter Page</div>
 		</div>
-		<div class="blocker"></div>
-		<div id="newline"></div>
-		<div class="content">
-			<div class="intro"></div>
-			<div class="sec">
-				<div class="graphic">
-					<div class="button-container">
-						<!--<div class="switch-button start" id="sb1">Total Crime</div>-->
-						<div class="switch-button" id="sb2">Total Crime Heatmap</div>
-						<!--<div class="switch-button" id="sb3">Total Car Theft</div>
-						<div class="switch-button" id="sb4">Total Robbery</div>
-						<div class="switch-button" id="sb5">Total Battery</div>
-						<div class="switch-button" id="sb6">Total Assault</div>
-						<div class="switch-button" id="sb7">Total Homicide</div>
+			<div class="big-wrapper">
+			<div class="top">
+				<h1 class="header">Mapping LA<br/> <span>Crime</span></h1>
+				<h1 class="header-small">LA Crime</h1>
+				<h2 class="subheader">
+					(<span id="years">2010-2016</span>)
+				</h2>
+				<div id="line"></div>
+			</div>
+			<div class="blocker"></div>
+			<div id="newline"></div>
+			<div class="introduction"></div>
+			<div class="content">
+				<div class="intro"></div>
+				<div class="sec">
+					<div class="graphic">
+						<div class="button-container">
+							<!--<div class="switch-button start" id="sb1">Total Crime</div>-->
+							<div class="switch-button" id="sb2">Total Crime Heatmap</div>
+							<!--<div class="switch-button" id="sb3">Total Car Theft</div>
+							<div class="switch-button" id="sb4">Total Robbery</div>
+							<div class="switch-button" id="sb5">Total Battery</div>
+							<div class="switch-button" id="sb6">Total Assault</div>
+							<div class="switch-button" id="sb7">Total Homicide</div>
+							-->
+						</div>
+						<h2 class="section-header"><span>Where</span> is crime occurring?</h2>
+
+						<div class="up-down-arrow"></div>
+						<div class="up-down-text">
+							<p class="higher">High Crime</p>
+							<p class="lower">Low Crime</p>
+						</div>
+
+						<div class="bar-container" id="bc-1">
+							<div class="bar b03" id="– 77th Street"></div>
+							<div class="bar b02" id="– Southeast"></div>
+							<div class="bar b06" id="– Southwest"></div>
+							<div class="bar b05" id="– Newton"></div>
+							<div class="bar b08" id="– Central"></div>
+							<div class="bar b11" id="– Olympic"></div>
+							<div class="bar b20" id="– Mission"></div>
+							<div class="bar b10" id="– Rampart"></div>
+							<div class="bar b07" id="– Hollenbeck"></div>
+							<div class="bar b13" id="– Hollywood"></div>
+							<div class="bar b01" id="– Harbor"></div>
+							<div class="bar b09" id="– Northeast"></div>
+							<div class="bar b04" id="– Pacific"></div>
+							<div class="bar b15" id="– North Hollywood"></div>
+							<div class="bar b19" id="– Foothill"></div>
+							<div class="bar b16" id="– Van Nuys"></div>
+							<div class="bar b12" id="– Wilshire"></div>
+							<div class="bar b21" id="– Devonshire"></div>
+							<div class="bar b18" id="– Topanga"></div>
+							<div class="bar b17" id="– West Valley"></div>
+							<div class="bar b14" id="– West Los Angeles"></div>
+
+						</div>
+
+						<div class="specialBar" id="bc-8">
+							<div class="bar b03" id="– 77th Street" style="background-color: #2d0101"></div>
+							<div class="bar b02" id="– Southeast" style="background-color: #510101"></div>
+							<div class="bar b06" id="– Southwest" style="background-color: #720101"></div>
+							<div class="bar b05" id="– Newton" style="background-color: #990202"></div>
+							<div class="bar b08" id="– Central" style="background-color: #bf0202"></div>
+							<div class="bar b11" id="– Olympic" style="background-color: #ff0000"></div>
+							<div class="bar b20" id="– Mission" style="background-color: #ff4a4a"></div>
+							<div class="bar b10" id="– Rampart" style="background-color: #ff8888"></div>
+							<div class="bar b07" id="– Hollenbeck" style="background-color: #ffaeae"></div>
+							<div class="bar b13" id="– Hollywood" style="background-color: #ffcfcf"></div>
+							<div class="bar b01" id="– Harbor" style="background-color: #fcf0f0"></div>
+							<div class="bar b09" id="– Northeast" style="background-color: #defff9"></div>
+							<div class="bar b04" id="– Pacific" style="background-color: #acfcec"></div>
+							<div class="bar b15" id="– North Hollywood" style="background-color: #42fcd8"></div>
+							<div class="bar b19" id="– Foothill" style="background-color: #02d1aa"></div>
+							<div class="bar b16" id="– Van Nuys" style="background-color: #04b290"></div>
+							<div class="bar b12" id="– Wilshire" style="background-color: #06937b"></div>
+							<div class="bar b21" id="– Devonshire" style="background-color: #016d60"></div>
+							<div class="bar b18" id="– Topanga" style="background-color: #025951"></div>
+							<div class="bar b17" id="– West Valley" style="background-color: #013f39"></div>
+							<div class="bar b14" id="– West Los Angeles" style="background-color: #033028"></div>
+
+						</div>
+
+						<div class="bar-container vehicle" id="bc-2">
+							<div class="bar b-1-03" id="– 77th Street"></div>
+							<div class="bar b-1-05" id="– Newton"></div>
+							<div class="bar b-1-02" id="– Southeast"></div>
+							<div class="bar b-1-01" id="– Harbor"></div>
+							<div class="bar b-1-20" id="– Mission"></div>
+							<div class="bar b-1-07" id="– Hollenbeck"></div>
+							<div class="bar b-1-06" id="– Southwest"></div>
+							<div class="bar b-1-09" id="– Northeast"></div>
+							<div class="bar b-1-04" id="– Pacific"></div>
+							<div class="bar b-1-19" id="– Foothill"></div>
+							<div class="bar b-1-15" id="– North Hollywood"></div>
+							<div class="bar b-1-11" id="– Olympic"></div>
+							<div class="bar b-1-10" id="– Rampart"></div>
+							<div class="bar b-1-16" id="– Van Nuys"></div>
+							<div class="bar b-1-21" id="– Devonshire"></div>
+							<div class="bar b-1-17" id="– West Valley"></div>
+							<div class="bar b-1-13" id="– Hollywood"></div>
+							<div class="bar b-1-12" id="– Wilshire"></div>
+							<div class="bar b-1-18" id="– Topanga"></div>
+							<div class="bar b-1-14" id="– West Los Angeles"></div>
+							<div class="bar b-1-08" id="– Central"></div>
+
+						</div>
+						<div class="bar-container robbery" id="bc-3">
+							<div class="bar b-2-03" id="– 77th Street"></div>
+							<div class="bar b-2-02" id="– Southeast"></div>
+							<div class="bar b-2-06" id="– Southwest"></div>
+							<div class="bar b-2-05" id="– Newton"></div>
+							<div class="bar b-2-10" id="– Rampart"></div>
+							<div class="bar b-2-11" id="– Olympic"></div>
+							<div class="bar b-2-08" id="– Central"></div>
+							<div class="bar b-2-13" id="– Hollywood"></div>
+							<div class="bar b-2-20" id="– Mission"></div>
+							<div class="bar b-2-12" id="– Wilshire"></div>
+							<div class="bar b-2-07" id="– Hollenbeck"></div>
+							<div class="bar b-2-09" id="– Northeast"></div>
+							<div class="bar b-2-01" id="– Harbor"></div>
+							<div class="bar b-2-04" id="– Pacific"></div>
+							<div class="bar b-2-15" id="– North Hollywood"></div>
+							<div class="bar b-2-16" id="– Van Nuys"></div>
+							<div class="bar b-2-17" id="– West Valley"></div>
+							<div class="bar b-2-19" id="– Foothill"></div>
+							<div class="bar b-2-18" id="– Topanga"></div>
+							<div class="bar b-2-21" id="– Devonshire"></div>
+							<div class="bar b-2-14" id="– West Los Angeles"></div>
+						</div>
+						<div class="bar-container battery" id="bc-4">
+							<div class="bar b-3-03" id="– 77th Street"></div>
+							<div class="bar b-3-06" id="– Southwest"></div>
+							<div class="bar b-3-08" id="– Central"></div>
+							<div class="bar b-3-02" id="– Southeast"></div>
+							<div class="bar b-3-11" id="– Olympic"></div>
+							<div class="bar b-3-13" id="– Hollywood"></div>
+							<div class="bar b-3-05" id="– Newton"></div>
+							<div class="bar b-3-10" id="– Rampart"></div>
+							<div class="bar b-3-20" id="– Mission"></div>
+							<div class="bar b-3-15" id="– North Hollywood"></div>
+							<div class="bar b-3-04" id="– Pacific"></div>
+							<div class="bar b-3-07" id="– Hollenbeck"></div>
+							<div class="bar b-3-16" id="– Van Nuys"></div>
+							<div class="bar b-3-09" id="– Northeast"></div>
+							<div class="bar b-3-12" id="– Wilshire"></div>
+							<div class="bar b-3-01" id="– Harbor"></div>
+							<div class="bar b-3-18" id="– Topanga"></div>
+							<div class="bar b-3-14" id="– West Los Angeles"></div>
+							<div class="bar b-3-21" id="– Devonshire"></div>
+							<div class="bar b-3-17" id="– West Valley"></div>
+							<div class="bar b-3-19" id="– Foothill"></div>
+						</div>
+						<div class="bar-container assault" id="bc-5">
+							<div class="bar b-4-03" id="– 77th Street"></div>
+							<div class="bar b-4-02" id="– Southeast"></div>
+							<div class="bar b-4-06" id="– Southwest"></div>
+							<div class="bar b-4-05" id="– Newton"></div>
+							<div class="bar b-4-08" id="– Central"></div>
+							<div class="bar b-4-10" id="– Rampart"></div>
+							<div class="bar b-4-07" id="– Hollenbeck"></div>
+							<div class="bar b-4-20" id="– Mission"></div>
+							<div class="bar b-4-01" id="– Harbor"></div>
+							<div class="bar b-4-13" id="– Hollywood"></div>
+							<div class="bar b-4-09" id="– Northeast"></div>
+							<div class="bar b-4-11" id="– Olympic"></div>
+							<div class="bar b-4-19" id="– Foothill"></div>
+							<div class="bar b-4-15" id="– North Hollywood"></div>
+							<div class="bar b-4-04" id="– Pacific"></div>
+							<div class="bar b-4-16" id="– Van Nuys"></div>
+							<div class="bar b-4-18" id="– Topanga"></div>
+							<div class="bar b-4-12" id="– Wilshire"></div>
+							<div class="bar b-4-17" id="– West Valley"></div>
+							<div class="bar b-4-21" id="– Devonshire"></div>
+							<div class="bar b-4-14" id="– West Los Angeles"></div>
+						</div>
+						<div class="bar-container homicide" id="bc-6">
+							<div class="bar b-5-03" id="– 77th Street"></div>
+							<div class="bar b-5-02" id="– Southeast"></div>
+							<div class="bar b-5-05" id="– Newton"></div>
+							<div class="bar b-5-06" id="– Southwest"></div>
+							<div class="bar b-5-07" id="– Hollenbeck"></div>
+							<div class="bar b-5-01" id="– Harbor"></div>
+							<div class="bar b-5-10" id="– Rampart"></div>
+							<div class="bar b-5-20" id="– Mission"></div>
+							<div class="bar b-5-19" id="– Foothill"></div>
+							<div class="bar b-5-09" id="– Northeast"></div>
+							<div class="bar b-5-08" id="– Central"></div>
+							<div class="bar b-5-11" id="– Olympic"></div>
+							<div class="bar b-5-15" id="– North Hollywood"></div>
+							<div class="bar b-5-13" id="– Hollywood"></div>
+							<div class="bar b-5-12" id="– Wilshire"></div>
+							<div class="bar b-5-16" id="– Van Nuys"></div>
+							<div class="bar b-5-04" id="– Pacific"></div>
+							<div class="bar b-5-17" id="– West Valley"></div>
+							<div class="bar b-5-18" id="– Topanga"></div>
+							<div class="bar b-5-21" id="– Devonshire"></div>
+							<div class="bar b-5-14" id="– West Los Angeles"></div>
+						</div>
+
+
+					</div>
+					<div class="map">
+					<div class="through"></div>
+						<div class="a1 area"></div>
+						<div class="a2 area"></div>
+						<div class="a3 area" id="area03"></div>
+						<div class="a4 area"></div>
+						<div class="a5 area"></div>
+						<div class="a6 area"></div>
+						<div class="a7 area"></div>
+						<div class="a8 area"></div>
+						<div class="a9 area"></div>
+						<div class="a10 area"></div>
+						<div class="a11 area"></div>
+						<div class="a12 area"></div>
+						<div class="a13 area"></div>
+						<div class="a14 area"></div>
+						<div class="a15 area"></div>
+						<div class="a16 area"></div>
+						<div class="a17 area"></div>
+						<div class="a18 area"></div>
+						<div class="a19 area"></div>
+						<div class="a20 area"></div>
+						<div class="a21 area"></div>
+					</div>
+				</div>
+				<div class="sec" id="clock-sec">
+					<h2 class="section-header rh"><span id="what-time">At what times</span> are crimes occurring?</h2>
+					<div class="clock-face">
+						<div class="am-pm" id="am">AM</div>
+						<div class="am-pm" id="pm">PM</div>
+						<div class="inside-clock">
+							<p id="time">1:00-2:00AM</p>
+							<p id="time-content"><span id="totCrime">(# Crime)</span><br/><span id="time-percent">12%</span><br/><span
+							id="time-num">4,000</span><br/></p>
+						</div>
+					</div>
+					<div class="box">
+
+						<div class="am01 time-section ts1"></div>
+						<div class="am02 time-section ts1"></div>
+						<div class="am03 time-section ts1"></div>
+
+						<div class="am04 time-section ts1"></div>
+						<div class="am05 time-section ts1"></div>
+						<div class="am06 time-section ts1"></div>
+
+						<div class="am07 time-section ts1"></div>
+						<div class="am08 time-section ts1"></div>
+						<div class="am09 time-section ts1"></div>
+
+						<div class="am10 time-section ts1"></div>
+						<div class="am11 time-section ts1"></div>
+						<div class="am12 time-section ts1"></div>
+
+						
+
+
+
+
+						<div class="pm01 time-section ts2"></div>
+						<div class="pm02 time-section ts2"></div>
+						<div class="pm03 time-section ts2"></div>
+
+						<div class="pm04 time-section ts2"></div>
+						<div class="pm05 time-section ts2"></div>
+						<div class="pm06 time-section ts2"></div>
+
+						<div class="pm07 time-section ts2"></div>
+						<div class="pm08 time-section ts2"></div>
+						<div class="pm09 time-section ts2"></div>
+
+						<div class="pm10 time-section ts2"></div>
+						<div class="pm11 time-section ts2"></div>
+						<div class="pm12 time-section ts2"></div>
+
+
+					</div>
+				</div>
+				<div class="sec bs">
+					<h2 class="section-header" id="what-month" ><span>During which months</span> are crimes occurring?</h2>
+					<div class="month-container">
+						<p class="m-caption">Jan</p>
+						<p class="m-caption">Feb</p>
+						<p class="m-caption">Mar</p>
+						<p class="m-caption">Apr</p>
+						<p class="m-caption">May</p>
+						<p class="m-caption">Jun</p>
+						<p class="m-caption">Jul</p>
+						<p class="m-caption">Aug</p>
+						<p class="m-caption">Sep</p>
+						<p class="m-caption">Oct</p>
+						<p class="m-caption">Nov</p>
+						<p class="m-caption">Dec</p>
+					</div>
+					<div class="bargraph">
+						<!--<div class="month" id="m12"><span>15.7%</span></div>
+						<div class="month" id="m11"><span>15.5%</span></div>
+						<div class="month" id="m10"><span>17.3%</span></div>
+						<div class="month" id="m9"><span>19.0%</span></div>
+						<div class="month" id="m8"><span>20%</span></div>
+						<div class="month" id="m7"><span>19.9%</span></div>
+						<div class="month" id="m6"><span>19.0%</span></div>
+						<div class="month" id="m5"><span>19.4%</span></div>
+						<div class="month" id="m4"><span>18.1%</span></div>
+						<div class="month" id="m3"><span>18.3%</span></div>
+						<div class="month" id="m2"><span>16.1%</span></div>
+						<div class="month" id="m1"><span>18.2%</span></div>
 						-->
+						<div class="month" id="m12"><span></span></div>
+						<div class="month" id="m11"><span></span></div>
+						<div class="month" id="m10"><span></span></div>
+						<div class="month" id="m9"><span></span></div>
+						<div class="month" id="m8"><span></span></div>
+						<div class="month" id="m7"><span></span></div>
+						<div class="month" id="m6"><span></span></div>
+						<div class="month" id="m5"><span></span></div>
+						<div class="month" id="m4"><span></span></div>
+						<div class="month" id="m3"><span></span></div>
+						<div class="month" id="m2"><span></span></div>
+						<div class="month" id="m1"><span></span></div>
 					</div>
-					<h2 class="section-header"><span>Where</span> is crime occurring?</h2>
-
-					<div class="up-down-arrow"></div>
-					<div class="up-down-text">
-						<p class="higher">High Crime</p>
-						<p class="lower">Low Crime</p>
-					</div>
-
-					<div class="bar-container" id="bc-1">
-						<div class="bar b03" id="– 77th Street"></div>
-						<div class="bar b02" id="– Southeast"></div>
-						<div class="bar b06" id="– Southwest"></div>
-						<div class="bar b05" id="– Newton"></div>
-						<div class="bar b08" id="– Central"></div>
-						<div class="bar b11" id="– Olympic"></div>
-						<div class="bar b20" id="– Mission"></div>
-						<div class="bar b10" id="– Rampart"></div>
-						<div class="bar b07" id="– Hollenbeck"></div>
-						<div class="bar b13" id="– Hollywood"></div>
-						<div class="bar b01" id="– Harbor"></div>
-						<div class="bar b09" id="– Northeast"></div>
-						<div class="bar b04" id="– Pacific"></div>
-						<div class="bar b15" id="– North Hollywood"></div>
-						<div class="bar b19" id="– Foothill"></div>
-						<div class="bar b16" id="– Van Nuys"></div>
-						<div class="bar b12" id="– Wilshire"></div>
-						<div class="bar b21" id="– Devonshire"></div>
-						<div class="bar b18" id="– Topanga"></div>
-						<div class="bar b17" id="– West Valley"></div>
-						<div class="bar b14" id="– West Los Angeles"></div>
-
-					</div>
-
-					<div class="specialBar" id="bc-8">
-						<div class="bar b03" id="– 77th Street" style="background-color: #2d0101"></div>
-						<div class="bar b02" id="– Southeast" style="background-color: #510101"></div>
-						<div class="bar b06" id="– Southwest" style="background-color: #720101"></div>
-						<div class="bar b05" id="– Newton" style="background-color: #990202"></div>
-						<div class="bar b08" id="– Central" style="background-color: #bf0202"></div>
-						<div class="bar b11" id="– Olympic" style="background-color: #ff0000"></div>
-						<div class="bar b20" id="– Mission" style="background-color: #ff4a4a"></div>
-						<div class="bar b10" id="– Rampart" style="background-color: #ff8888"></div>
-						<div class="bar b07" id="– Hollenbeck" style="background-color: #ffaeae"></div>
-						<div class="bar b13" id="– Hollywood" style="background-color: #ffcfcf"></div>
-						<div class="bar b01" id="– Harbor" style="background-color: #fcf0f0"></div>
-						<div class="bar b09" id="– Northeast" style="background-color: #defff9"></div>
-						<div class="bar b04" id="– Pacific" style="background-color: #acfcec"></div>
-						<div class="bar b15" id="– North Hollywood" style="background-color: #42fcd8"></div>
-						<div class="bar b19" id="– Foothill" style="background-color: #02d1aa"></div>
-						<div class="bar b16" id="– Van Nuys" style="background-color: #04b290"></div>
-						<div class="bar b12" id="– Wilshire" style="background-color: #06937b"></div>
-						<div class="bar b21" id="– Devonshire" style="background-color: #016d60"></div>
-						<div class="bar b18" id="– Topanga" style="background-color: #025951"></div>
-						<div class="bar b17" id="– West Valley" style="background-color: #013f39"></div>
-						<div class="bar b14" id="– West Los Angeles" style="background-color: #033028"></div>
-
-					</div>
-
-					<div class="bar-container vehicle" id="bc-2">
-						<div class="bar b-1-03" id="– 77th Street"></div>
-						<div class="bar b-1-05" id="– Newton"></div>
-						<div class="bar b-1-02" id="– Southeast"></div>
-						<div class="bar b-1-01" id="– Harbor"></div>
-						<div class="bar b-1-20" id="– Mission"></div>
-						<div class="bar b-1-07" id="– Hollenbeck"></div>
-						<div class="bar b-1-06" id="– Southwest"></div>
-						<div class="bar b-1-09" id="– Northeast"></div>
-						<div class="bar b-1-04" id="– Pacific"></div>
-						<div class="bar b-1-19" id="– Foothill"></div>
-						<div class="bar b-1-15" id="– North Hollywood"></div>
-						<div class="bar b-1-11" id="– Olympic"></div>
-						<div class="bar b-1-10" id="– Rampart"></div>
-						<div class="bar b-1-16" id="– Van Nuys"></div>
-						<div class="bar b-1-21" id="– Devonshire"></div>
-						<div class="bar b-1-17" id="– West Valley"></div>
-						<div class="bar b-1-13" id="– Hollywood"></div>
-						<div class="bar b-1-12" id="– Wilshire"></div>
-						<div class="bar b-1-18" id="– Topanga"></div>
-						<div class="bar b-1-14" id="– West Los Angeles"></div>
-						<div class="bar b-1-08" id="– Central"></div>
-
-					</div>
-					<div class="bar-container robbery" id="bc-3">
-						<div class="bar b-2-03" id="– 77th Street"></div>
-						<div class="bar b-2-02" id="– Southeast"></div>
-						<div class="bar b-2-06" id="– Southwest"></div>
-						<div class="bar b-2-05" id="– Newton"></div>
-						<div class="bar b-2-10" id="– Rampart"></div>
-						<div class="bar b-2-11" id="– Olympic"></div>
-						<div class="bar b-2-08" id="– Central"></div>
-						<div class="bar b-2-13" id="– Hollywood"></div>
-						<div class="bar b-2-20" id="– Mission"></div>
-						<div class="bar b-2-12" id="– Wilshire"></div>
-						<div class="bar b-2-07" id="– Hollenbeck"></div>
-						<div class="bar b-2-09" id="– Northeast"></div>
-						<div class="bar b-2-01" id="– Harbor"></div>
-						<div class="bar b-2-04" id="– Pacific"></div>
-						<div class="bar b-2-15" id="– North Hollywood"></div>
-						<div class="bar b-2-16" id="– Van Nuys"></div>
-						<div class="bar b-2-17" id="– West Valley"></div>
-						<div class="bar b-2-19" id="– Foothill"></div>
-						<div class="bar b-2-18" id="– Topanga"></div>
-						<div class="bar b-2-21" id="– Devonshire"></div>
-						<div class="bar b-2-14" id="– West Los Angeles"></div>
-					</div>
-					<div class="bar-container battery" id="bc-4">
-						<div class="bar b-3-03" id="– 77th Street"></div>
-						<div class="bar b-3-06" id="– Southwest"></div>
-						<div class="bar b-3-08" id="– Central"></div>
-						<div class="bar b-3-02" id="– Southeast"></div>
-						<div class="bar b-3-11" id="– Olympic"></div>
-						<div class="bar b-3-13" id="– Hollywood"></div>
-						<div class="bar b-3-05" id="– Newton"></div>
-						<div class="bar b-3-10" id="– Rampart"></div>
-						<div class="bar b-3-20" id="– Mission"></div>
-						<div class="bar b-3-15" id="– North Hollywood"></div>
-						<div class="bar b-3-04" id="– Pacific"></div>
-						<div class="bar b-3-07" id="– Hollenbeck"></div>
-						<div class="bar b-3-16" id="– Van Nuys"></div>
-						<div class="bar b-3-09" id="– Northeast"></div>
-						<div class="bar b-3-12" id="– Wilshire"></div>
-						<div class="bar b-3-01" id="– Harbor"></div>
-						<div class="bar b-3-18" id="– Topanga"></div>
-						<div class="bar b-3-14" id="– West Los Angeles"></div>
-						<div class="bar b-3-21" id="– Devonshire"></div>
-						<div class="bar b-3-17" id="– West Valley"></div>
-						<div class="bar b-3-19" id="– Foothill"></div>
-					</div>
-					<div class="bar-container assault" id="bc-5">
-						<div class="bar b-4-03" id="– 77th Street"></div>
-						<div class="bar b-4-02" id="– Southeast"></div>
-						<div class="bar b-4-06" id="– Southwest"></div>
-						<div class="bar b-4-05" id="– Newton"></div>
-						<div class="bar b-4-08" id="– Central"></div>
-						<div class="bar b-4-10" id="– Rampart"></div>
-						<div class="bar b-4-07" id="– Hollenbeck"></div>
-						<div class="bar b-4-20" id="– Mission"></div>
-						<div class="bar b-4-01" id="– Harbor"></div>
-						<div class="bar b-4-13" id="– Hollywood"></div>
-						<div class="bar b-4-09" id="– Northeast"></div>
-						<div class="bar b-4-11" id="– Olympic"></div>
-						<div class="bar b-4-19" id="– Foothill"></div>
-						<div class="bar b-4-15" id="– North Hollywood"></div>
-						<div class="bar b-4-04" id="– Pacific"></div>
-						<div class="bar b-4-16" id="– Van Nuys"></div>
-						<div class="bar b-4-18" id="– Topanga"></div>
-						<div class="bar b-4-12" id="– Wilshire"></div>
-						<div class="bar b-4-17" id="– West Valley"></div>
-						<div class="bar b-4-21" id="– Devonshire"></div>
-						<div class="bar b-4-14" id="– West Los Angeles"></div>
-					</div>
-					<div class="bar-container homicide" id="bc-6">
-						<div class="bar b-5-03" id="– 77th Street"></div>
-						<div class="bar b-5-02" id="– Southeast"></div>
-						<div class="bar b-5-05" id="– Newton"></div>
-						<div class="bar b-5-06" id="– Southwest"></div>
-						<div class="bar b-5-07" id="– Hollenbeck"></div>
-						<div class="bar b-5-01" id="– Harbor"></div>
-						<div class="bar b-5-10" id="– Rampart"></div>
-						<div class="bar b-5-20" id="– Mission"></div>
-						<div class="bar b-5-19" id="– Foothill"></div>
-						<div class="bar b-5-09" id="– Northeast"></div>
-						<div class="bar b-5-08" id="– Central"></div>
-						<div class="bar b-5-11" id="– Olympic"></div>
-						<div class="bar b-5-15" id="– North Hollywood"></div>
-						<div class="bar b-5-13" id="– Hollywood"></div>
-						<div class="bar b-5-12" id="– Wilshire"></div>
-						<div class="bar b-5-16" id="– Van Nuys"></div>
-						<div class="bar b-5-04" id="– Pacific"></div>
-						<div class="bar b-5-17" id="– West Valley"></div>
-						<div class="bar b-5-18" id="– Topanga"></div>
-						<div class="bar b-5-21" id="– Devonshire"></div>
-						<div class="bar b-5-14" id="– West Los Angeles"></div>
-					</div>
-
-
+			
 				</div>
-				<div class="map">
-				<div class="through"></div>
-					<div class="a1 area"></div>
-					<div class="a2 area"></div>
-					<div class="a3 area" id="area03"></div>
-					<div class="a4 area"></div>
-					<div class="a5 area"></div>
-					<div class="a6 area"></div>
-					<div class="a7 area"></div>
-					<div class="a8 area"></div>
-					<div class="a9 area"></div>
-					<div class="a10 area"></div>
-					<div class="a11 area"></div>
-					<div class="a12 area"></div>
-					<div class="a13 area"></div>
-					<div class="a14 area"></div>
-					<div class="a15 area"></div>
-					<div class="a16 area"></div>
-					<div class="a17 area"></div>
-					<div class="a18 area"></div>
-					<div class="a19 area"></div>
-					<div class="a20 area"></div>
-					<div class="a21 area"></div>
+				<div class="final-text">
+					<p>The resulting observations from the data demonstrated varying levels of crime by region of Los angeles, with south Los Angeles having higher rates of crime. The evening and nighttime were hot zones for crime, as were the late summer months of July and August.</p>
 				</div>
 			</div>
-			<div class="sec" id="clock-sec">
-				<h2 class="section-header rh"><span id="what-time">At what times</span> are crimes occurring?</h2>
-				<div class="clock-face">
-					<div class="am-pm" id="am">AM</div>
-					<div class="am-pm" id="pm">PM</div>
-					<div class="inside-clock">
-						<p id="time">1:00-2:00AM</p>
-						<p id="time-content"><span id="totCrime">(# Crime)</span><br/><span id="time-percent">12%</span><br/><span
-						id="time-num">4,000</span><br/></p>
-					</div>
-				</div>
-				<div class="box">
-
-					<div class="am01 time-section ts1"></div>
-					<div class="am02 time-section ts1"></div>
-					<div class="am03 time-section ts1"></div>
-
-					<div class="am04 time-section ts1"></div>
-					<div class="am05 time-section ts1"></div>
-					<div class="am06 time-section ts1"></div>
-
-					<div class="am07 time-section ts1"></div>
-					<div class="am08 time-section ts1"></div>
-					<div class="am09 time-section ts1"></div>
-
-					<div class="am10 time-section ts1"></div>
-					<div class="am11 time-section ts1"></div>
-					<div class="am12 time-section ts1"></div>
-
-					
-
-
-
-
-					<div class="pm01 time-section ts2"></div>
-					<div class="pm02 time-section ts2"></div>
-					<div class="pm03 time-section ts2"></div>
-
-					<div class="pm04 time-section ts2"></div>
-					<div class="pm05 time-section ts2"></div>
-					<div class="pm06 time-section ts2"></div>
-
-					<div class="pm07 time-section ts2"></div>
-					<div class="pm08 time-section ts2"></div>
-					<div class="pm09 time-section ts2"></div>
-
-					<div class="pm10 time-section ts2"></div>
-					<div class="pm11 time-section ts2"></div>
-					<div class="pm12 time-section ts2"></div>
-
-
-				</div>
 			</div>
-			<div class="sec bs">
-				<h2 class="section-header" id="what-month" ><span>During which months</span> are crimes occurring?</h2>
-				<div class="month-container">
-					<p class="m-caption">Jan</p>
-					<p class="m-caption">Feb</p>
-					<p class="m-caption">Mar</p>
-					<p class="m-caption">Apr</p>
-					<p class="m-caption">May</p>
-					<p class="m-caption">Jun</p>
-					<p class="m-caption">Jul</p>
-					<p class="m-caption">Aug</p>
-					<p class="m-caption">Sep</p>
-					<p class="m-caption">Oct</p>
-					<p class="m-caption">Nov</p>
-					<p class="m-caption">Dec</p>
-				</div>
-				<div class="bargraph">
-					<!--<div class="month" id="m12"><span>15.7%</span></div>
-					<div class="month" id="m11"><span>15.5%</span></div>
-					<div class="month" id="m10"><span>17.3%</span></div>
-					<div class="month" id="m9"><span>19.0%</span></div>
-					<div class="month" id="m8"><span>20%</span></div>
-					<div class="month" id="m7"><span>19.9%</span></div>
-					<div class="month" id="m6"><span>19.0%</span></div>
-					<div class="month" id="m5"><span>19.4%</span></div>
-					<div class="month" id="m4"><span>18.1%</span></div>
-					<div class="month" id="m3"><span>18.3%</span></div>
-					<div class="month" id="m2"><span>16.1%</span></div>
-					<div class="month" id="m1"><span>18.2%</span></div>
-					-->
-					<div class="month" id="m12"><span></span></div>
-					<div class="month" id="m11"><span></span></div>
-					<div class="month" id="m10"><span></span></div>
-					<div class="month" id="m9"><span></span></div>
-					<div class="month" id="m8"><span></span></div>
-					<div class="month" id="m7"><span></span></div>
-					<div class="month" id="m6"><span></span></div>
-					<div class="month" id="m5"><span></span></div>
-					<div class="month" id="m4"><span></span></div>
-					<div class="month" id="m3"><span></span></div>
-					<div class="month" id="m2"><span></span></div>
-					<div class="month" id="m1"><span></span></div>
-				</div>
-		
-			</div>
-		</div>
 		 <script src="script.js" type="text/javascript"></script>
 		<script src="data.js" type="text/javascript"></script>
 	</body>

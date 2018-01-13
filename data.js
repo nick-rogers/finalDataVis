@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
 
+$('.button-start').click(function(){
+	$('.intro-splash').fadeOut(500);
+	$('.intro-text').fadeOut(500);
+	$('.big-wrapper').fadeIn(800);
+});
+
+$('.intro-splash').fadeIn(300);
+
+setTimeout(loadSplash, 900);
+
+function loadSplash(){
+	$('.intro-splash').addClass('intro-splash-active');
+	$('.intro-text').fadeIn(1000);
+}
+
 var neighborhoods = [{
 
 		name: ["Harbor", "Southeast", "77th Street", "Pacific", "Newton", "Southwest", "Hollenbeck", "Central", "Northeast", "Rampart", "Olympic", "Wilshire", "Hollywood", "West Los Angeles", "North Hollywood", "Van Nuys", "West Valley", "Topanga", "Foothill", "Mission", "Devonshire"],
@@ -377,6 +392,53 @@ $('.switch-button').click(function(){
 	}
 });
 
+$('.area').mouseover(function(){
+	var classes = $(this).attr('class');
+	var whichArea = classes.substring(0,3);
+	var classString = "";
+
+	if(whichArea.charAt(2) == " "){
+		whichArea = whichArea.substring(0,2);
+		classString = '.b0'+whichArea.charAt(1);
+		var selected = $(classString);
+		var idContent = selected.attr('id');
+		selected.text(idContent);
+		selected.css('filter','brightness(0)');
+	}
+	else {
+		whichArea = whichArea.substring(1,3);
+		classString = '.b'+whichArea;
+		console.log('here it is too: ' + classString);
+		var selected = $(classString);
+		var idContent = selected.attr('id');
+		selected.text(idContent);
+		selected.css('filter','brightness(0)');
+	}
+});
+
+$('.area').mouseout(function(){
+	var classes = $(this).attr('class');
+	var whichArea = classes.substring(0,3);
+	var classString = "";
+
+	if(whichArea.charAt(2) == " "){
+		whichArea = whichArea.substring(0,2);
+		classString = '.b0'+whichArea.charAt(1);
+		var selected = $(classString);
+		var idContent = selected.attr('id');
+		selected.text('');
+		selected.css('filter','brightness(1)');
+	}
+	else {
+		whichArea = whichArea.substring(1,3);
+		classString = '.b'+whichArea;
+		console.log('here it is too: ' + classString);
+		var selected = $(classString);
+		var idContent = selected.attr('id');
+		selected.text('');
+		selected.css('filter','brightness(1)');
+	}
+});
 
 
 
