@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 $('.top').ready(function(){
 	var post = $(document).scrollTop();
 	if(post > 5){

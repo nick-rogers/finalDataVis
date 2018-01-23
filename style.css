@@ -60,14 +60,18 @@ h2 {
 	background-position: center;
 	z-index: 1000;
 	overflow: hidden;
-	perspective: 500px;
 	background-color: white;
 	perspective: 15px;
+	-moz-perspective: 15px;
+	-webkit-perspective: 15px;
 	transition: 2000ms all ease-in-out;
+	opacity: 1;
 }
 
 .intro-splash-active {
 	transform: rotateX(50deg);
+	-webkit-transform: rotateX(50deg);
+	-moz-transform: rotateX(50deg);
 	background-size: 150% 150%;
 	height: 1500px;
 	width: 200%;
@@ -94,11 +98,18 @@ h2 {
 	line-height: 0px;
 }
 
+.intro-text p {
+	line-height: 28px;
+	-webkit-line-height: 28px;
+	-moz-line-height: 28px;
+}
+
 .underline {
 	display: inline-block;
 	width: 370px;
 	height: 5px;
 	background-color: black;
+	z-index: 100;
 }
 
 .button-start {
@@ -112,6 +123,11 @@ h2 {
 	font-size: 12px;
 	line-height: 25px;
 	margin-top: 1rem;
+	z-index: 1300;
+	perspective: 10px;
+	-moz-perspective: 10px;
+	-webkit-perspective: 10px;
+
 }
 
 .button-start:hover {

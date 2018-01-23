@@ -7,6 +7,12 @@ $('.button-start').click(function(){
 	$('.big-wrapper').fadeIn(800);
 });
 
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+  $('.intro-splash').css('opacity', '0.5');
+}
+
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
 $('.intro-splash').fadeIn(300);
 
 setTimeout(loadSplash, 900);
